@@ -1,2 +1,4 @@
 # Resaltador-CS-Paralelo
-Actividad Integradora 5.3 Resaltador de sintaxis paralelo
+## Autores: 
+  #### José Emiliano Riosmena Castañón - A01704245
+  #### Iván Ricardo Paredes Avilez - A01705083
