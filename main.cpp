@@ -193,7 +193,7 @@ double parExecution(const string &directory) {
     }
 
     clock_t finish = clock();
-    double timeElapsed = double (finish - start) / CLOCKS_PER_SEC;
+    double timeElapsed = double (finish - start) / double(CLOCKS_PER_SEC);
     return timeElapsed;
 }
 
