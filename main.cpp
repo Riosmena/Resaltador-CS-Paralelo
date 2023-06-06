@@ -91,7 +91,7 @@ string createLexer(const string &inputText) {
 }
 
 void createHTML(const string &tokenCode, const string &file) {
-    string name = "output.html";
+    string name = fs::path(file).stem().string() + ".html";
     string path = "./outputFiles/" + name;
 
     if (!fs::exists("./outputFiles")) {
@@ -174,7 +174,7 @@ double parExecution(const string &directory) {
     cout << "\nParallel App" << endl;
     clock_t start = clock();
 
-    pthread_t MAX_THREADS[10];
+    pthread_t MAX_THREADS[100];
     int index = 0;
 
     for (auto &files : fs::directory_iterator(directory)) {
